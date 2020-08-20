@@ -10,3 +10,6 @@ if ($('.clean-product').length > 0) {
     });
 }
 
+function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
