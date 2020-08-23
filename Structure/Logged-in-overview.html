@@ -18,24 +18,67 @@
 </head>
 
 <body>
-    <ul class="nav flex-column shadow d-flex sidebar mobile-hid">
-        <li class="nav-item logo-holder">
-            <div class="text-center text-white logo py-4 mx-4"><a class="text-white text-decoration-none" id="title" href="#"><strong>Habiton</strong></a><a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a></div>
-        </li>
-        <li class="nav-item"></li>
-        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-user mx-3"></i><span class="text-nowrap mx-2">My profile</span></a></li>
-        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-keyboard mx-3"></i><span class="text-nowrap mx-2">My Habits!</span></a></li>
-        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-list mx-3"></i><span class="text-nowrap mx-2">Manage Habits!</span></a></li>
-        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-chart-bar mx-3"></i><span class="text-nowrap mx-2">My progress</span></a></li>
-        <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-cog mx-3"></i><span class="text-nowrap mx-2">Settings</span></a><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-sign-out-alt mx-3"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2">Log out</span></a></li>
-     <div class="Pop-up" id="popup-1">
-    <div class="overlay"></div>
-    <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;>
+<div id="dashboard" class="dash-non-loading">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar">
+                <ul class="nav flex-column shadow d-flex sidebar mobile-hid">
+                    <li class="nav-item logo-holder">
+                        <div class="text-center text-white logo py-4 mx-4"><a class="text-white text-decoration-none" id="title" href="#"><strong>Habiton</strong></a><a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-user mx-3"></i><span class="text-nowrap mx-2">My profile</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="far fa-keyboard mx-3"></i><span class="text-nowrap mx-2">My Habits!</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-list mx-3"></i><span class="text-nowrap mx-2">Manage Habits!</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-chart-bar mx-3"></i><span class="text-nowrap mx-2">My progress</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-cog mx-3"></i><span class="text-nowrap mx-2">Settings</span></a><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-sign-out-alt mx-3"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2">Log out</span></a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="topbar">
+                    <div class="left-topbar-wrapper">
+                        <div class="left-topbar">
+                            <div class="topbar-date">
+                                <div class="topbar-date-label" style="width: 400px;">
+                                    <span><h1 class="page-header">Today</h1></span>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="right-topbar">
+                            <div class="right-topbar-wrapper">
+                                 <a href="#" class="btn-new-habit"><span class="text-new-habit-btn">Add new habit</span></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-mid" style="margin-top: 0px;">
+                    <div class="dashboard-mid">
+                        <div id="habits" class="habit-list" iso="true" style>
+                            <ul id="dashboard-habit-list" class="habit-list-of-today">
+                                <li class="habit-items">
+                                    <!--<a href="javascript:void(0)">-->
+                                        <span class="area">
+                                            <span class="habit-holder-default">
+                                                
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<button onclick="togglePopup()">New Habit!</button>    
-    </ul>
-         
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
