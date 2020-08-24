@@ -23,7 +23,7 @@
             <div class="sidebar">
                 <ul class="nav flex-column shadow d-flex sidebar mobile-hid">
                     <li class="nav-item logo-holder">
-                        <div class="text-center text-white logo py-4 mx-4"><a class="text-white text-decoration-none" id="title" href="#"><strong>Habiton</strong></a><a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a>
+                        <div class="text-center text-white logo py-4 mx-4"><a class="text-white text-decoration-none" id="title" href="frontpage.html"><img src="assets/img/logo_large.png" height="30" width="150"></a><a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" href="#"><i class="fas fa-user mx-3"></i><span class="text-nowrap mx-2">My profile</span></a></li>
@@ -40,9 +40,12 @@
                             <div class="topbar-date">
                                 <div class="topbar-date-label" style="width: 400px;">
                                     <span><h1 class="page-header">Today</h1></span>
+
                                 </div>
-                                
+                                 <p id="demo"></p>
                             </div>
+                            <a href="#" class="previous round">&#8249;</a>
+                            <a href="#" class="next round">&#8250;</a>
                             
                         </div>
 
@@ -59,9 +62,13 @@
                         <div id="habits" class="habit-list" iso="true" style>
                             <ul id="dashboard-habit-list" class="habit-list-of-today">
                                 <li class="habit-items">
-                                    <!--<a href="javascript:void(0)">-->
+                                    <!--<a href="javascript:calendar.js">-->
                                         <span class="area">
                                             <span class="habit-holder-default">
+                                             <section class="today-box" id="today-box">
+                                             	
+
+
                                                 
                                             </span>
                                         </span>
@@ -79,12 +86,14 @@
     </div>
 </div>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/calendar.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/sidebar.js"></script>
+    
 </body>
 
 </html>
